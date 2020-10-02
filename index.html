@@ -208,7 +208,7 @@ error_reporting(E_ALL ^ E_NOTICE);// 显示除去 E_NOTICE 之外的所有错误
 $uid = $_GET["uid"];
 
 if ($uid != null) {
-    $file_contents = curl_get_https('https://api.bilibili.com/x/relation/stat?vmid=' . $uid);
+    $file_contents = curl_get_https('https://api.bilibili.com/x/relation/stat?vmid=35206160' . $uid);
     $arr = json_decode($file_contents,true);
 }
 
@@ -226,8 +226,8 @@ function curl_get_https($url){
 
 <html>
 <head>
-<meta http-equiv="refresh" content="1">
-<title>腾龙工作室实现B站粉丝数实时显示</title>
+<meta http-equiv="refresh" content="600">
+<title>粉丝显示</title>
 <style type="text/css">
 #font {
     font-family: "微软雅黑";

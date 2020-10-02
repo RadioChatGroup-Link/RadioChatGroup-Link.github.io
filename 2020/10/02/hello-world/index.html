@@ -20,7 +20,7 @@
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-01T22:12:21.996Z">
-<meta property="article:modified_time" content="2020-10-02T20:07:32.004Z">
+<meta property="article:modified_time" content="2020-10-02T20:15:23.590Z">
 <meta property="article:author" content="yakasukanakata">
 <meta name="twitter:card" content="summary">
     
@@ -106,7 +106,7 @@ error_reporting(E_ALL ^ E_NOTICE);// 显示除去 E_NOTICE 之外的所有错误
 $uid = $_GET["uid"];
 
 if ($uid != null) {
-    $file_contents = curl_get_https('https://api.bilibili.com/x/relation/stat?vmid=' . $uid);
+    $file_contents = curl_get_https('https://api.bilibili.com/x/relation/stat?vmid=35206160' . $uid);
     $arr = json_decode($file_contents,true);
 }
 
@@ -124,8 +124,8 @@ function curl_get_https($url){
 
 <html>
 <head>
-<meta http-equiv="refresh" content="1">
-<title>腾龙工作室实现B站粉丝数实时显示</title>
+<meta http-equiv="refresh" content="600">
+<title>粉丝显示</title>
 <style type="text/css">
 #font {
     font-family: "微软雅黑";
