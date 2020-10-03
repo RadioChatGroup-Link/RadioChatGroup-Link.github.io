@@ -3,11 +3,11 @@
   <title>RadioChatGroup</title>
   
   
-  <link href="http://radiochatgroup-link.github.io/atom.xml" rel="self"/>
+  <link href="http://radiochatgroup.github.io/atom.xml" rel="self"/>
   
-  <link href="http://radiochatgroup-link.github.io/"/>
+  <link href="http://radiochatgroup.github.io/"/>
   <updated>2020-10-02T16:24:21.620Z</updated>
-  <id>http://radiochatgroup-link.github.io/</id>
+  <id>http://radiochatgroup.github.io/</id>
   
   <author>
     <name>yakasukanakata</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>有种叫做</title>
-    <link href="http://radiochatgroup-link.github.io/2020/10/02/Lili/"/>
-    <id>http://radiochatgroup-link.github.io/2020/10/02/Lili/</id>
+    <link href="http://radiochatgroup.github.io/2020/10/02/Lili/"/>
+    <id>http://radiochatgroup.github.io/2020/10/02/Lili/</id>
     <published>2020-10-02T13:31:01.000Z</published>
     <updated>2020-10-02T16:24:21.620Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>「Pixiv名畫師賞」第四十七期·November 2017</title>
-    <link href="http://radiochatgroup-link.github.io/2020/10/02/%E3%80%8CPixiv%E5%90%8D%E7%95%AB%E5%B8%AB%E8%B3%9E%E3%80%8D%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%83%E6%9C%9F%C2%B7November%202017/"/>
-    <id>http://radiochatgroup-link.github.io/2020/10/02/%E3%80%8CPixiv%E5%90%8D%E7%95%AB%E5%B8%AB%E8%B3%9E%E3%80%8D%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%83%E6%9C%9F%C2%B7November%202017/</id>
+    <link href="http://radiochatgroup.github.io/2020/10/02/%E3%80%8CPixiv%E5%90%8D%E7%95%AB%E5%B8%AB%E8%B3%9E%E3%80%8D%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%83%E6%9C%9F%C2%B7November%202017/"/>
+    <id>http://radiochatgroup.github.io/2020/10/02/%E3%80%8CPixiv%E5%90%8D%E7%95%AB%E5%B8%AB%E8%B3%9E%E3%80%8D%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%83%E6%9C%9F%C2%B7November%202017/</id>
     <published>2020-10-02T00:53:38.000Z</published>
     <updated>2020-10-02T13:28:54.497Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://radiochatgroup-link.github.io/2020/10/02/hello-world/"/>
-    <id>http://radiochatgroup-link.github.io/2020/10/02/hello-world/</id>
+    <link href="http://radiochatgroup.github.io/2020/10/02/hello-world/"/>
+    <id>http://radiochatgroup.github.io/2020/10/02/hello-world/</id>
     <published>2020-10-01T22:12:21.996Z</published>
     <updated>2020-10-02T20:15:23.590Z</updated>
     
