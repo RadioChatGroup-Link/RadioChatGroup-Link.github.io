@@ -1,25 +1,3 @@
-.dark-btn {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid black;
-  padding: 0 15px;
-  font-size: 13px;
-  font-family: "Oswald", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
-  text-align: center;
-  color: #c2c2c2; }
-  .dark-btn:hover {
-    color: #414141;
-    background-color: #ff9800; }
-  .dark-btn .icon {
-    position: relative;
-    margin-right: 3px;
-    font-size: 16px;
-    vertical-align: middle;
-    line-height: 44px; }
-  .dark-btn .text {
-    vertical-align: middle;
-    line-height: 44px; }
-
 .site-sidebar {
   position: fixed;
   top: 0;
@@ -27,15 +5,12 @@
   width: 280px;
   height: 100%;
   padding: 20px;
-  background-color: #414141;
+  background-color: #1d2d3c;
   text-align: center;
   overflow: hidden;
   transform: translate3d(280px, 0, 0);
   transition: all 0.24s ease;
   z-index: 1; }
-  @media (prefers-color-scheme: dark) {
-    .site-sidebar {
-      background: #24272d; } }
   .site-sidebar .shortcuts {
     display: block;
     position: absolute;
@@ -70,16 +45,16 @@
       float: left;
       width: 100px;
       margin-left: -1px;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 12px; }
       .site-sidebar .sidebar-switch .dark-btn.active {
-        color: whitesmoke;
+        color: #282828;
         background-color: #ff9800; }
         @media (prefers-color-scheme: dark) {
           .site-sidebar .sidebar-switch .dark-btn.active {
-            color: #414141; } }
+            background-color: #009688; } }
       .site-sidebar .sidebar-switch .dark-btn .icon {
-        line-height: 30px;
-        top: 1px; }
+        line-height: 30px; }
       .site-sidebar .sidebar-switch .dark-btn .text {
         line-height: 30px; }
 
@@ -91,19 +66,43 @@
   .site-bio.show {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px); }
-  .site-bio .window-nav {
-    width: 125px;
-    padding: 0 0 0 15px;
-    text-align: left; }
+  .site-bio .section {
+    margin: 15px auto; }
+  .site-bio .menu {
+    position: relative;
+    width: 100%; }
+    .site-bio .menu ul {
+      position: relative;
+      width: 100%;
+      list-style: none;
+      padding: 0; }
+      .site-bio .menu ul li {
+        width: 50%;
+        margin-bottom: 10px; }
+        .site-bio .menu ul li.right {
+          padding-left: 5px; }
+        .site-bio .menu ul li.left {
+          padding-right: 5px; }
+    .site-bio .menu .dark-btn {
+      display: block;
+      width: 100%;
+      font-size: 13px;
+      padding: 5px 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
   .site-bio .about-me {
     padding: 12px 5px 15px 5px;
-    transition: background 0.24s, border-color 0.24s; }
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.24s, border-color 0.24s; }
+    .site-bio .about-me:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
     .site-bio .about-me .avatar {
       display: block;
       width: 96px;
       height: 96px;
-      margin: 0 auto;
-      background: rgba(0, 0, 0, 0.3);
+      margin: 4px auto;
+      background-color: rgba(0, 0, 0, 0.3);
       border-radius: 50%;
       border: 1px solid black;
       padding: 3px;
@@ -115,82 +114,28 @@
         border-radius: 50%; }
     .site-bio .about-me .dark-btn {
       padding: 5px 15px;
-      margin: 5px 0; }
+      font-size: 12px; }
       .site-bio .about-me .dark-btn:hover {
-        background-color: #009688;
-        color: rgba(0, 0, 0, 0.7); }
+        background-color: #ff9800; }
+        @media (prefers-color-scheme: dark) {
+          .site-bio .about-me .dark-btn:hover {
+            background-color: #009688; } }
       .site-bio .about-me .dark-btn .icon {
         margin-right: 0; }
     .site-bio .about-me .info {
-      color: darkgray;
+      color: #a7a7a7;
       margin-top: 10px;
       line-height: 140%;
       padding: 0 15px;
-      font-size: 13px; }
-  .site-bio .social {
-    position: relative;
-    margin: 15px 0;
-    padding: 0; }
-    .site-bio .social a {
-      display: inline-block;
-      color: #ffffff;
-      font-size: 14px;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 46px;
-      vertical-align: middle;
-      width: 46px;
-      height: 46px;
-      background-color: rgba(0, 0, 0, 0.3);
-      border: 1px solid black;
-      margin: 5px 2px; }
-      .site-bio .social a.feed:hover {
-        background-color: #ff9800; }
-      .site-bio .social a.github:hover {
-        background-color: #467cc2; }
-      .site-bio .social a.twitter:hover {
-        background-color: #55acee; }
-      .site-bio .social a.facebook:hover {
-        background-color: #3765a3; }
-      .site-bio .social a.google:hover {
-        background-color: #db4437; }
-      .site-bio .social a.dribbble:hover {
-        background-color: #ed699c; }
-      .site-bio .social a.pinterest:hover {
-        background-color: #bc1725; }
-      .site-bio .social a.weibo:hover {
-        background-color: #f8712a; }
-      .site-bio .social a.tumblr:hover {
-        background-color: #35465c; }
-      .site-bio .social a.instagram:hover {
-        background-color: #3f729b; }
-      .site-bio .social a.linkedin:hover {
-        background-color: #0077B5; }
-      .site-bio .social a.behance:hover {
-        background-color: #1769FF; }
-      .site-bio .social a:hover {
-        background: #009688; }
-        .site-bio .social a:hover .icon {
-          color: whitesmoke; }
-      .site-bio .social a .avatar,
-      .site-bio .social a .icon {
-        transition: all 0.24s; }
-      .site-bio .social a .avatar {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin: 7px;
-        border-radius: 50%; }
-      .site-bio .social a .icon {
-        font-size: 18px;
-        color: darkgray;
-        line-height: 46px; }
+      font-size: 12px; }
+      @media (prefers-color-scheme: dark) {
+        .site-bio .about-me .info {
+          color: #476d92; } }
 
 .site-toc {
   position: relative;
-  padding: 12px 10px 15px 10px;
+  padding: 10px 12px;
   background: rgba(0, 0, 0, 0.1);
-  border: 1px solid #262626;
   max-height: 450px;
   overflow: auto;
   opacity: 0;
@@ -203,10 +148,13 @@
     text-align: left;
     list-style: none; }
     .site-toc > ol li a {
-      color: #e6e6e6;
-      font-size: 15px; }
+      color: white;
+      font-size: 14px; }
       .site-toc > ol li a:hover {
-        color: #009688; }
+        color: #ff9800; }
+        @media (prefers-color-scheme: dark) {
+          .site-toc > ol li a:hover {
+            color: #009688; } }
     .site-toc > ol li ol {
       list-style: none;
       padding-left: 15px; }
